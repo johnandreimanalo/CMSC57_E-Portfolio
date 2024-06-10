@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Discrete Revelations</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html#about">Home</a></li>
+                <li><a href="index.html#courseworks">Lessons</a></li>
+                <li><a href="index.html#footer">Contact Us</a></li>
+            </ul>
+            <a href="index.html#about" class="logo" style="text-decoration: none;">
+                <h1 style="color: white; margin: 0;">Discrete Revelations</h1>
+            </a>
+        </div>
+    </nav>
+    
+    
+
+    <center>
+
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Welcome to our 1st Long Exam Topics!</h1>
+            <p style="color: black;">In this section, we delve into three fundamental topics essential for mastering discrete mathematics: the basics of counting, the pigeonhole principle, and permutations & combinations, each offering valuable insights to enrich your learning journey.</p>
+        </div>
+    </section>
+
+    <section id="degree">
+    <div class="degree">
+        <h1>Embark on a foundational exploration as we delve into the intricacies of the basics of counting, a fundamental concept pivotal in understanding the principles of discrete mathematics.</h1>
+        <br>
+        <h2><i>Three (3) selected topics under fundamental counting principle are the following:</i></h2>
+    </div>
+        <!--Each button of the "accordion" class will present its content when clicked on, and will revert back to being
+        a button when clicked on again-->
+        <div class="content">
+        <button class="accordion">I. Basics of Counting</button>
+        <div class="panel">
+
+            <p><b>Counting</b> basics refer to the basic principles and techniques used
+                 to determine the number of possible outcomes or arrangements in
+                  a given situation. These principles form the basis of combinatorics,
+                   a branch of mathematics focused on counting and placing objects.</p>
+            <p>The basic counting principles in combinatorics are the basic techniques used
+                 to count or determine the number of outcomes in various situations. The three main counting principles are:</p>
+            
+
+            <h3><b>The Addition Principle (Rules of Sum)</b></h3>
+            <p>■ The <i>addition principle</i> states that if a task can be performed in either two ways, where the two methods cannot be performed simultaneously, then completing the job can be done by the sum of the ways to perform the task.</p>
+
+            <center>
+                <img src="rule-of-sums.png" alt="">
+            </center>
+
+            <p><b>Example:</b></p>
+
+            <p>For instance, suppose a bakery has a selection of 20 different cupcakes, 10 different donuts, and 15 different muffins. If you are to select a tasty treat, how many different choices of sweets can you choose from?</p>
+
+            <p><b>Solution:</b></p>
+
+            <p>Because we have to choose from either a cupcake or donut or muffin (notice the “OR”), we have 20 + 10 + 15 = 45 treats to choose from.</p>
+
+               <p style="text-align: center;"><b>N =  20 + 10 + 15 = 45 </b></p>
+
+               <p><strong>Sum Rule Real Life Applications</strong></p>
+
+
+               <p>■ <b>Menu Planning:</b>
+                Consider a restaurant menu where customers can choose a meal from different categories, such as appetizers, main courses, and desserts. To count the total number of possible meal combinations, you can use the sum rule. For example, if there are 5 appetizers, 10 main courses, and 7 desserts, the total number of meal combinations would be 5 + 10 + 7 = 22.
+               </p>
+
+               <center>
+               <img src="menu plan.gif" alt="">
+                </center>
+
+               <p>■ <b>Outfit Selection:</b>
+                When getting dressed in the morning, you might have choices for tops, bottoms, and accessories. If you have 3 tops, 4 bottoms, and 2 accessories to choose from, you can use the sum rule to calculate the total number of outfit combinations by adding the options for each category: 3 + 4 + 2 = 9.
+               </p>
+
+               <center>
+                <img src="outfit.webp" alt="">
+                 </center>
+
+               <p>■ <b>Travel Iteneraries:</b>
+                Planning a trip often involves selecting flights, accommodations, and activities. If you have multiple options for each part of your itinerary, you can apply the sum rule to calculate the total number of possible travel plans. For instance, if there are 3 flight options, 5 hotel choices, and 4 activity packages, the total number of possible itineraries would be 3 + 5 + 4 = 12.
+               </p>
+
+               <center>
+                <img src="Travel option.gif" alt="">
+               </center>
+               <br>
+               <br>
+
+               <h3><b>The Principle of Counting with Repetition (Product Rule)</b></h3>
+            <p>■ With the <i>Counting Principle</i>, repetition is allowed, meaning that if the first and second choices have the same options, 
+                we can choose the same option for both.</p>
+
+            <p><b>Example:</b></p>
+
+            <p>If you have 4 different colors and you want to paint a fence with 5 panels, allowing for repetition of colors, 
+                then the total number of possible colorings:</p>
+            
+               <p style="text-align: center;"><b>N = 4^5 = 1024</b></p>
+
+               <p>Principle of Counting with Repetition Real Life Applications</p>
+
+               <p>■ <b>Lock Combination:</b>
+                Consider a combination lock with 4 dials, each containing the numbers 0 through 9. You want to determine the total number of possible combinations for the lock, allowing repetition. Using the principle of counting with repetitions, each dial has 10 options (0-9), and there are 4 dials. Therefore, the total number of possible combinations is <b>10^4 = 10,000</b>
+               </p>
+
+               <center>
+               <img src="lock.webp" alt="">
+                </center>
+
+               <p>■ <b>License Plate Generation:</b>
+                Imagine you're designing a system to generate license plates for vehicles. Each plate consists of 7 characters, which can be uppercase letters (A-Z) or digits (0-9), allowing repetition. To count the total number of possible license plates, you'd use the principle of counting with repetitions. Each character position has 26 options for letters and 10 options for digits, giving a total of 36 options per position. Therefore, the total number of possible license plates is <b>36^7 = 78,364,164,096</b>
+               </p>
+
+               <center>
+                <img src="license.webp" alt="">
+                 </center>
+
+               <p>■ <b>Random Number Generation:</b>
+                Suppose you're tasked with generating random 8-digit numbers. Each digit can be any number from 0 to 9, allowing repetition. To calculate the total number of possible 8-digit numbers, you apply the principle of counting with repetitions. Each digit position has 10 options (0-9), and there are 8 positions. Therefore, the total number of possible 8-digit numbers is <b>10^8 = 100,000,000</b>
+               </p>
+
+               <center>
+                <img src="random.gif" alt="">
+               </center>
+               <br>
+               <br>
+
+               <h3><b>The Multiplicative Principle (Product Rule)</b></h3>
+
+            <p>■ The <i>multiplicative principle</i> states that if there are 
+                𝑛 ways of doing something, and 
+                𝑚 ways of doing another thing after that, then there are 
+                𝑛 × 𝑚 ways to perform both of these actions.</p>
+
+            <p><b>Example: Ice Cream Sundae Customization</b></p>
+
+            <p>IA new ice cream parlor offers customers the chance to create their own sundaes. They can choose from 5 flavors of ice cream, 8 different toppings, and 3 types of sauce. How many unique sundaes can customers create?</p>
+            <p><b>Solution:</b></p>
+
+            <p>To find the total number of possible sundae combinations, we multiply the number of options for each component:
+                Total combinations = (Number of ice cream flavors) × (Number of toppings) × (Number of sauces)
+                Thus, by the use of multiplication principle, we can get the possible value of:</p>
+
+               <p style="text-align: center;"><b>N = 5 x 8 x 3 = 120</b></p>
+
+               <p><b>Interpretation:</b></p>
+
+               <p>There are 120 unique combinations of ice cream sundaes that customers can create from the available options.</p>
+
+               <center>
+                <img src="ice cream.gif" alt="">
+                 </center>
+
+               <p>Other Examples</p>
+
+               <p>■ <b>Transportation Service:</b>
+                Calvin wants to go to Milwaukee. He can choose from
+                3 bus services or 
+                2 train services to head from home to downtown Chicago. From there, he can choose from 2 bus services or 3 train services to head to Milwaukee.
+               </p>
+
+               <p>This time, he has to purchase a bus concession (which will only allow him to take buses), or a train concession (which will only allow him to take trains). If he only has money for 
+                1 of these concessions, how many ways are there for him to get to Milwaukee?
+                </p>
+
+                
+               <p>If Calvin purchases a bus concession, he has 3 × 2 = 6 ways to get to Milwaukee. (Rule of product) If he purchases a train concession, he also has 2 × 3 = 6 ways to get there. Hence, he has 6 + 6 = 12 ways to get to Milwaukee in total. (Rule of sum)
+                </p>
+                
+               <center>
+               <img src="train.webp" alt="">
+                </center>
+
+               <p>In simple terms, counting in math helps us understand how things fit together, especially when dealing with problems that involve putting things in order or choosing from a set of options. It's like having a roadmap that guides us through solving puzzles, making choices, and finding the best way to do things in various situations.</p>
+               <br>
+               <br>
+
+
+               <center>
+               <div class="reflection">
+                <h2>REFLECTION</h2>
+                <h3>Dive into the intriguing world of "Basics of Counting," where simple concepts unlock profound insights and thought-provoking reflections await</h3>
+                <br>
+                <p>Upon contemplating the fundamentals of counting, I've gained a deeper appreciation for its pivotal role across
+                     different facets of our lives. Whether it's mundane daily activities or intricate decision-making endeavors,
+                    the capacity to enumerate and scrutinize possibilities proves to be a potent asset</p>
+
+                <p>An essential insight lies in recognizing the significance of enumeration within probability theory.
+                     Utilizing the counting principle allows us to assess the likelihood of particular occurrences or outcomes,
+                     facilitating informed decision-making amidst uncertainty. The basic principles of enumeration underpin the
+                    calculation of probability, whether applied to predicting the outcome of a game, evaluating risks within a 
+                    business venture, or estimating the probability of a specific event unfolding.
+                </p>
+                
+                <p>The basics of counting have influenced my approach to decision-making and problem-solving. I've learned to dissect complex issues into more manageable parts and apply the counting principle to methodically analyze each component. This approach has enhanced my ability to consider various outcomes, assess multiple configurations and options, and ultimately make better-informed decisions.</p>
+                
+                <p>Therefore, comprehending the basics of counting has furnished me with potent tools for evaluating possibilities, making informed decisions, and navigating uncertainty in various contexts.</p>
+                </div>
+                </center>
+            
+        <br>
+        </div>
+        <button class="accordion">II. Pigeonhole Principle</button>
+        <div class="panel">
+            <p>The <b>Pigeonhole Principle</b>, also referred to as the Dirichlet Principle, is a fundamental concept in combinatorics. It states that if you have more items than containers, at least one container must hold more than one item. Essentially, if you distribute items into fewer categories than the number of items, there will inevitably be at least one category containing multiple items.</p>
+        
+            <p>The significance of the pigeonhole principle lies in its ability to prove the existence of certain outcomes without explicitly identifying them. It is a powerful tool for setting boundaries, disproving possibilities, and making predictions through straightforward logical reasoning.</p>
+            
+            <center>
+                <img src="pigeon.png" alt="">
+            </center>
+        
+            <p>Here are some practical examples that illustrate the pigeonhole principle:</p>
+        
+            <p>■ <b>Gloves:</b></p> 
+            <p>If you have more than two gloves in a drawer that only contains left and right gloves, at least two of them must be for the same hand. Since there are only two types of gloves, exceeding this number guarantees repetition.</p>
+            
+            <center>
+                <img src="gloves.webp" alt="">
+            </center>
+        
+            <p>■ <b>Seating Arrangement:</b></p> 
+            <p>In a classroom with more students than seats in a row, at least one row must have more than one student seated. If you attempt to place more students than there are seats, some seats will inevitably have to be shared.</p>
+            
+            <center>
+                <img src="seat.jpg" alt="">
+            </center>
+        
+            <p>■ <b>Bookshelves:</b></p> 
+            <p>Consider a library with 10 bookshelves and 11 books. At least one shelf will hold more than one book if each book is placed on a different shelf. This demonstrates that with limited shelves, at least one shelf will have multiple books.</p>
+        
+            <center>
+                <img src="bookshelves.webp" alt="">
+            </center>
+        
+            <p>The pigeonhole principle is also employed to solve problems and predict outcomes in various contexts. Here are some applications:</p>
+        
+            <p>■ <b>Proving Redundancy:</b></p> 
+            <p>This principle can be used to demonstrate that redundancy is unavoidable in certain configurations. For example, in a group of people who must each shake hands with every other person, having more people than the maximum unique handshake pairs ensures that some pairs will be repeated.</p>
+        
+            <p>■ <b>Detecting Overlaps:</b></p> 
+            <p>This principle helps identify where overlaps will occur in real-world scenarios. For example, if multiple events are scheduled in a limited number of venues, some events will inevitably overlap, requiring careful scheduling to manage conflicts.</p>
+        
+            <p>■ <b>Optimizing Resources:</b></p> 
+            <p>This principle allows for the optimization of resources by predicting inevitable overlaps. For instance, in network design, knowing that data packets will exceed pathways helps in planning for congestion control and resource allocation.</p>
+            
+            <center>
+                <img src="optimize.gif" alt="">
+            </center>
+        
+            <p>Overall, the pigeonhole principle is a valuable tool for proving the existence of specific outcomes, identifying constraints, and making predictions in various situations. Its simple yet effective reasoning about counting and distribution offers insights into a wide array of real-world and mathematical problems.</p>
+            <br>
+            <br>
+        
+            <center>
+            <div class="reflection">
+                <h2>REFLECTION</h2>
+                <h3>Contemplate insightful reflections and observations on the Pigeonhole Principle, one of the fundamental ideas in combinatorics!</h3>
+                <br>
+                <p>I now have a deeper appreciation for the Pigeonhole Principle's simplicity and profound impact on problem-solving. According to this principle, if there are more items than slots to hold them, at least one slot must contain more than one item. Despite its apparent simplicity, the pigeonhole principle has significant implications for various scenarios and fields.</p>
+        
+                <p>Learning about the pigeonhole principle has enhanced my analytical skills by prompting me to critically consider situations where items and elements are distributed or grouped. This understanding has allowed me to evaluate the likelihood of repetition or duplication based solely on the number of items and containers involved. This principle helps identify constraints, offers a useful perspective for problem-solving, and makes outcomes predictable.</p>
+        
+                <p>The pigeonhole principle has diverse applications across disciplines. In computer science, for example, it is valuable for analyzing collision resolution strategies and hashing algorithms. It aids in scheduling and planning by identifying conflicts and overlaps, ensuring efficient resource and time allocation. In mathematics and number theory, the pigeonhole principle proves patterns, repetitions, and even infinite sequences.</p>
+        
+                <p>In conclusion, the pigeonhole principle has proven to be a powerful tool for problem-solving. Understanding this concept is crucial due to its simplicity and wide range of applications. By applying this principle, we develop a more structured and organized approach to examining scenarios with limited resources and arrangements. The pigeonhole principle has improved my analytical thinking and revealed the repetitions and patterns present in both academic and practical contexts.</p>
+            </div>
+            </center>
+            
+        </div>        
+        <button class="accordion">III. Permutation and Combination</button>
+        <div class="panel">
+        
+            <p>Permutations and combinations are fundamental concepts in combinatorial mathematics used to count and analyze various arrangements and selections of objects. Both deal with countable probabilities, but permutations focus on the order of objects while combinations focus on the selection of objects.</p>
+        
+            <h3><b>Permutations</b></h3>
+        
+            <p>Permutation refers to the arrangement or order of a set of objects. The number of permutations of a set of n objects taken r at a time is denoted as P(n, r) and is calculated as follows:</p>
+        
+            <center>
+                <img src="permutation.webp" alt="">
+            </center>
+            
+            <p>where n! (read as "n factorial") represents the product of all positive integers from 1 to n.</p>
+        
+            <p><b>Example:</b></p>
+            <p>Suppose you have 7 different gaming figurines and you want to arrange 4 of them on a display shelf. The number of permutations would be:</p>
+            <p style="text-align: center;"><b>P(7, 4) = 7! / (7 - 4)! = 7! / 3! = 840.</b></p>
+        
+            <p><b>Application:</b></p>
+            <p>Permutations can be used in scenarios involving ordering, such as arranging game characters, assigning roles in a multiplayer game, generating unique codes, or shuffling a deck of cards.</p>
+        
+            <h3><b>Combinations</b></h3>
+        
+            <p>Combination refers to selecting objects from a set without regard to their order. The number of combinations of n objects taken r at a time is denoted as C(n, r) or nCr and is calculated as follows:</p>
+        
+            <center>
+                <img src="combination.webp" alt="">
+            </center>
+        
+            <p><b>Example:</b></p>
+            <p>Imagine you have 10 different power-ups in a game and you want to choose 3 of them for your character. The number of combinations would be:</p>
+            <p style="text-align: center;"><b>C(10, 3) = 10! / (3! * (10 - 3)!) = 10! / (3! * 7!) = 120.</b></p>
+        
+            <p><b>Application:</b></p>
+            <p>Combinations can be used in situations where you select a subset of items without regard to their order, such as forming a team from a pool of players, selecting items for a quest, or choosing weapons for a mission.</p>
+            <br>
+        
+            <h3><b>Permutations and Combinations in Game Applications</b></h3>
+            <p>Permutations and combinations are heavily utilized in game strategies, calculations, and analyses. They help in evaluating odds, planning strategies, and analyzing game potential. Here are a few examples:</p>
+        
+            <p><b>Role-Playing Games (RPGs):</b></p>
+            <p>In RPGs, determining the possible character skill combinations or item loadouts involves combinations. The order in which quests are completed or actions are taken involves permutations.</p>
+        
+            <center>
+                <img src="rpg.gif" alt="">
+            </center>
+        
+            <p><b>Strategy Games:</b></p>
+            <p>In strategy games, analyzing potential moves and their outcomes involves permutations. Forming alliances or choosing units from a larger pool involves combinations.</p>
+        
+            <center>
+                <img src="strat.gif" alt="">
+            </center>
+        
+            <p><b>Esports:</b></p>
+            <p>In competitive gaming, predicting opponent strategies and counter-strategies involves permutations. Selecting team members and their roles involves combinations.</p>
+        
+            <center>
+                <img src="esports.png" alt="">
+            </center>
+        
+            <p><b>Loot Boxes: </b></p>
+            <p>Calculating the odds of obtaining specific items from loot boxes involves combinations. The sequence of items received involves permutations.</p>
+        
+            <center>
+                <img src="loot.gif" alt="">
+            </center>
+        
+            <p>Permutations and combinations provide basic tools for counting, analyzing, and forecasting possibilities in various scenarios including algebra, game theory, and real-world applications. Understanding these concepts enhances decision-making, probability comprehension, and strategic thinking in numerous contexts.</p>
+        
+            <br>
+            <br>
+            <center>
+            <div class="reflection">
+                <h2>REFLECTION</h2>
+                <h3>Explore thought-provoking reflections and insights in Permutation and Combination, crucial concepts in discrete mathematics!</h3>
+                <br>
+                <p>Reflecting on permutations and combinations has deepened my understanding of arranging and selecting items. These concepts are essential in various fields, providing powerful tools for calculating probabilities and making informed decisions.</p>
+        
+                <p>Permutations and combinations have numerous applications. In probability theory, they are crucial for calculating odds, evaluating outcomes, and understanding event likelihoods. Combinatorial optimization uses these concepts to find the best arrangements and selections to maximize efficiency or minimize costs. In data analysis and cryptography, permutations and combinations ensure security and perform statistical analysis.</p>
+        
+                <p>Exploring permutations and combinations has expanded my mathematical vocabulary and allowed me to apply these concepts in various real-world situations. They provided the tools to evaluate, quantify, make informed decisions, and optimize outcomes. These flexible concepts have been crucial in my learning journey, helping me understand probability, solve optimization problems, and ensure security.</p>
+            </div>
+            </center>
+        </div>
+        <br>
+        
+        </section>
+        
+        </center>        
+
+        <!--JS-->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            //Sets the buttons into an accordian format
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </div>
+
+  </body>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <ul class="social-media-icons">
+        <li><a href="https://www.facebook.com/johnandrei.manalo/"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="mailto:jsmanalo4@up.edu.ph"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+    <h3 class="rights">Discrete Revelations &copy; All rights reserved.</h3>
+  </footer>
+  
+
+</html>

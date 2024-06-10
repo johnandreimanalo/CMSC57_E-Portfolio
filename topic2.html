@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Discrete Revelations</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html#about">Home</a></li>
+                <li><a href="index.html#courseworks">Lessons</a></li>
+                <li><a href="index.html#footer">Contact Us</a></li>
+            </ul>
+            <a href="index.html#about" class="logo" style="text-decoration: none;">
+                <h1 style="color: white; margin: 0;">Discrete Revelations</h1>
+            </a>
+        </div>
+    </nav>
+    
+    
+
+    <center>
+
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container">
+            <h1 class="main-title" id="home">Welcome to our 2nd Long Exam Topics!</h1>
+            <p style="color: black;">In this section, we explore three captivating topics that are crucial for mastering discrete mathematics: the intriguing world of algebraic structures, the fascinating realm of probability theory, and the insightful concepts of expected value and variance.</p>
+        </div>
+    </section>
+
+    <section id="degree">
+    <div class="degree">
+        <h1>Embark on a foundational exploration as we delve into the intricacies of abstract algebraic, probability and, theory concepts pivotal in understanding the principles of discrete mathematics.</h1>
+        <br>
+        <h2><i>Three (3) selected topics under the concepts of algebra, and discrete probability are the following:</i></h2>
+    </div>
+
+    <div class="degree">
+        <h2><i>Abstract Algebra</i></h2>
+    </div>
+        <!--Each button of the "accordion" class will present its content when clicked on, and will revert back to being
+        a button when clicked on again-->
+        <div class="content">
+            <button class="accordion">IV. Algebraic Structures</button>
+            <div class="panel">
+        
+                <p>An <b>Algebraic Structure</b> consists of a set of elements and specific operations that can be performed on these elements. 
+                    They provide a foundation for exploring mathematical objects and their properties, facilitating the development of theorems, calculations, and connections.</p>
+        
+                <center>
+                    <img src="algebra.png" alt="">
+                </center>
+        
+                <p>Algebraic structures are essential because they abstract and generalize core mathematical concepts, offering a unified framework for understanding various mathematical objects. 
+                    They allow us to investigate common properties, behaviors, and operations across different mathematical systems.</p>
+        
+                <p>Among the key algebraic structures are those involving binary operations, modular arithmetic, and the greatest common divisors (GCD). These topics form the basis of many mathematical investigations and applications.</p>
+        
+                <p><b>Binary Operations</b></p>
+                <p>A <b>binary operation</b> on a set is a rule for combining two elements to form another element within the same set. For example, addition (+) and multiplication (×) are binary operations on the set of real numbers.</p>
+        
+                <center>
+                    <img src="binaryoperations.jpg" alt="">
+                </center>
+        
+                <p><b>■ Closure</b></p>
+                <p>For any two elements a and b in the set, the result of the operation a * b is also in the set.</p>
+        
+                <p><b>■ Associativity</b></p>
+                <p>For any elements a, b, and c, the operation satisfies (a * b) * c = a * (b * c).</p>
+        
+                <p><b>■ Identity Element</b></p>
+                <p>There exists an identity element e such that for any element a, a * e = e * a = a.</p>
+        
+                <p><b>■ Inverse Element</b></p>
+                <p>For each element a, there exists an element b such that a * b = b * a = e.</p>
+        
+                <p>Binary operations are fundamental in defining structures like groups, rings, and fields.</p>
+        
+                <p><b>Modular Arithmetic</b></p>
+                <p><b>Modular arithmetic</b> involves numbers wrapping around upon reaching a certain value, called the modulus. It is crucial in number theory and cryptography. For example, in a 12-hour clock, the time wraps around after 12 hours.</p>
+        
+                <center>
+                    <img src="mod.png" alt="">
+                </center>
+        
+                <p><b>■ Addition Modulo n</b></p>
+                <p>In modulo n arithmetic, the sum of two integers a and b is the remainder when a + b is divided by n.</p>
+        
+                <p><b>■ Multiplication Modulo n</b></p>
+                <p>The product of a and b is the remainder when a * b is divided by n.</p>
+        
+                <p><b>■ Modular Inverse</b></p>
+                <p>The modular inverse of an integer a modulo n is an integer x such that (a * x) % n = 1. Finding the modular inverse is important in cryptography, especially in the RSA algorithm.</p>
+        
+                <p><b>Example Problems:</b></p>
+                <p><b>1. Find the modular inverse of 3 modulo 11.</b></p>
+                <p>Solution: We need to find an integer x such that (3 * x) % 11 = 1. Using the Extended Euclidean Algorithm, we find that the modular inverse of 3 modulo 11 is 4 because (3 * 4) % 11 = 12 % 11 = 1.</p>
+        
+                <p></b>2. Find the modular inverse of 7 modulo 26.</b></p>
+                <p>Solution: We need to find an integer x such that (7 * x) % 26 = 1. Using the Extended Euclidean Algorithm, we find that the modular inverse of 7 modulo 26 is 15 because (7 * 15) % 26 = 105 % 26 = 1.</p>
+        
+                <p>Modular arithmetic is widely used in computer science, especially in algorithms and cryptography.</p>
+        
+                <p><b>Greatest Common Divisors (GCD)</b></p>
+                <p>The <b>greatest common divisor</b> of two integers is the largest positive integer that divides both numbers without leaving a remainder. It plays a key role in number theory and applications like simplifying fractions.</p>
+        
+                <center>
+                    <img src="gcd.jpg" alt="">
+                </center>
+        
+                <p><b>■ Euclidean Algorithm</b></p>
+                <p>A method for finding the GCD of two numbers a and b by repeatedly applying the division algorithm: gcd(a, b) = gcd(b, a mod b).</p>
+        
+                <p><b>Example Problems:</b></p>
+                <p>1. Find the GCD of 48 and 18 using the Euclidean Algorithm.</p>
+                <p>Solution: GCD(48, 18)</p>
+                <p>Step 1: 48 mod 18 = 12</p>
+                <p>Step 2: 18 mod 12 = 6</p>
+                <p>Step 3: 12 mod 6 = 0</p>
+                <p><strong>The GCD is 6.</strong></p>
+        
+                <p>2. Find the GCD of 56 and 98 using the Euclidean Algorithm.</p>
+                <p><b>Solution: GCD(56, 98)</b></p>
+                <p>Step 1: 98 mod 56 = 42</p>
+                <p>Step 2: 56 mod 42 = 14</p>
+                <p>Step 3: 42 mod 14 = 0</p>
+                <p><strong>The GCD is 14.</strong></p>
+        
+                <p><b>Applications</b></p>
+                <p>GCD is used in simplifying ratios, cryptographic algorithms, and solving Diophantine equations.</p>
+        
+                <p>Real-life applications of these concepts include:</p>
+                
+                <p><b>Game Design</b></p>
+                <p>In video games, modular arithmetic is used to manage circular data structures and procedural generation, such as terrain and levels that wrap around.</p>
+        
+                <center>
+                    <img src="game.gif" alt="">
+                </center>
+        
+                <p><b>Music Theory</b></p>
+                <p>Musical scales and rhythms often use modular arithmetic to create repeating patterns and cycles.</p>
+        
+                <center>
+                    <img src="musictheory.webp" alt="">
+                </center>
+        
+                <p><b>Cryptography</b></p>
+                <p>Encryption algorithms frequently rely on modular arithmetic and GCD to ensure data security and integrity.</p>
+        
+                <center>
+                    <img src="crypto.gif" alt="">
+                </center>
+        
+                <p>These topics provide powerful tools for analyzing and solving problems across a wide range of fields, demonstrating the practical utility and theoretical depth of algebraic structures.</p>
+                <br>
+                <br>
+        
+                <center>
+                    <div class="reflection">
+                        <h2>REFLECTION</h2>
+                        <h3>Sip on thought-provoking reflections and insights in, Algebraic Structure, one of the discrete delicacies!</h3>
+                        <br>
+                        <p>Studying binary operations, modular arithmetic, and greatest common divisors has shown me how important they are in math and other areas. These concepts help us understand how mathematical objects interact and behave.</p>
+        
+                        <p>Binary operations are the building blocks of more complex structures. Learning about them has helped me understand how different mathematical systems work.</p>
+        
+                        <p>Modular arithmetic is very useful, especially in computer science and cryptography. It helps with algorithms and keeping data secure.</p>
+        
+                        <p>Understanding the greatest common divisor is key for simplifying problems and finding efficient solutions.</p>
+        
+                        <p>Overall, these algebraic structures help us solve problems and understand complex systems in many fields.</p>
+                    </div>
+                </center>
+        
+            </div>
+        </div>        
+ 
+        <div class="degree">
+            <h2><i>Discrete Probability </i></h2>
+        </div>
+            <!--Each button of the "accordion" class will present its content when clicked on, and will revert back to being
+            a button when clicked on again-->
+            <div class="content">
+        <button class="accordion">V. Probability Theory</button>
+        <div class="panel">
+            <br>
+
+            <p>The area of mathematics known as <b>Probability Theory</b> is concerned with the analysis and measurement
+                 of randomness and uncertainty. It offers a framework for comprehending and forecasting the
+                  propensity of events to occur in distinct circumstances. The fundamental ideas in probability theory are:</p>
+                
+            <h3><b>Sample Space</b></h3>
+            <p>The sample space, denoted as S, is the set of all possible outcomes of a random experiment. It represents the complete set of potential results.</p>
+                
+            <p><b>Example:</b></p>
+            <p>In rolling a fair six-sided die, the sample space is S = {1, 2, 3, 4, 5, 6}, as these are the possible outcomes.</p>
+            
+            <center>
+                <img src="die.gif" alt="">
+            </center>
+
+            <h3><b>Events</b></h3>
+            <p>An event is a subset of the sample space, representing a specific outcome or a collection of outcomes of interest.</p>
+                
+            <p><b>Example:</b></p>
+            <p>Rolling an odd number (event A) when rolling a fair six-sided die. Event A corresponds to the outcomes {1, 3, 5}.</p>
+
+            <center>
+                <img src="rolldice.webp" alt="">
+            </center>
+
+            <h3><b>Probability Measures</b></h3>
+            <p>The sample space, denoted as S, is the set of all possible outcomes of a random experiment. It represents the complete set of potential results.</p>
+                
+            <p><b>Example:</b></p>
+            <p>A probability measure assigns a numerical value between 0 and 1 to each event in the sample space.
+                 It quantifies the likelihood of an event occurring.</p>
+        
+
+            <p>Different types of probabilities include:</p>
+
+            <h3><b>Conditional Probability</b></h3>
+            <p>The probability of an event happening given that another event has already happened is measured
+                 by conditional probability. The chance that event A will occur given that event B has already
+                  occurred is indicated by the notation P(A|B).</p>
+                
+            <p><b>Example:</b></p>
+            <p>The probability of drawing a spade (event A) from a standard card deck when the first card drawn
+                 was a heart (event B). P(A|B) represents the number of spades after drawing hearts divided by
+                  the number of cards remaining.</p>
+
+            <center>
+                <img src="deckcards.gif" alt="">
+            </center>
+
+            <h3><b>Independent Events:</b></h3>
+            <p>Events that are independent of one another are called independent events. The likelihood
+                 of one event occurring or not having occurred has no bearing on the likelihood of another.</p>
+                
+            <p><b>Example:</b></p>
+            <p>Tossing a fair coin twice. The outcome of the first toss does not affect the outcome of the
+                 second toss, so the events are independent.</p>
+
+            <center>
+                <img src="coin.gif" alt="">
+            </center>
+
+            <p>Probability theory finds applications in various fields, including:</p>
+
+            <p><b>■ Risk Assessment</b></p>
+            <p>Probability theory is employed in risk assessment and insurance to compute the probability
+                 of specific occurrences, such as accidents and natural disasters, and to establish the
+                  proper level of coverage and premiums.</p>
+
+            <center>
+                <img src="risk.jpg" alt="">
+            </center>
+                  
+            <p><b>■ Sports and Games</b></p>
+            <p>In order to forecast results, evaluate player performance, and build tactics, probability
+                 theory is employed in sports analytics. Probability theory assists in calculating winning
+                  odds and guides decision-making in games of chance like poker and blackjack.</p>
+                  
+            <center>
+                <img src="sports.gif" alt="">
+            </center>
+                
+            <p><b>■ Weather Forecasting</b></p>
+            <p>In order to assess the possibility of different weather conditions, such as rain and snow,
+                 and to communicate the degree of forecasting uncertainty, probability theory is used in
+                  weather forecasting.</p>
+
+            <center>
+                <img src="weather.gif" alt="">
+            </center>      
+
+            <p>A fundamental foundation for analyzing uncertainty and making reliable predictions is provided
+                 by probability theory. Understanding the likelihood of an event is crucial for decision-making,
+                  risk assessment, and strategic planning. It has applications in a wide range of industries.</p>
+            <br>
+            <br>
+             
+            <center>
+                <div class="reflection">
+                 <h2>REFLECTION</h2>
+                 <h3>Sip on thought-provoking reflections and insights in,Probability Theory , one of the discrete delicacies!</h3>
+                 <br>
+                 <p>I have a better knowledge of the essential role that probability theory plays in recognizing
+                     uncertainty, forecasting outcomes, and reaching wise decisions as a result of my investigation
+                      into probability theory. We can eliminate ambiguity in many domains thanks to the powerful
+                       framework that probability theory offers for calculating and analyzing the probability
+                        that an event will occur.</p>
+
+                <p>My understanding of probability has equipped me with a useful tool for evaluating and
+                     controlling risk. Conditional probabilities and independence taught me how to compute
+                      probabilities, comprehend the idea of sample spaces and events, and examine links
+                       between events. Whether in financial, insurance, or ordinary life issues, these
+                        technologies have made it possible for us to make well-informed decisions based 
+                        on several potential outcomes.</p>
+
+                <p>The results of my study into probability theory have been eye-opening, demonstrating
+                     the important role that probability theory plays in risk assessment and decision-making.
+                      In many areas, managing uncertainty and making informed decisions are made easier with
+                       a solid understanding of probabilities. The numerous and varied applications of
+                        probability theory show how significant and relevant it is to our daily lives.
+                         We may confidently traverse a complicated environment with the help of the robust
+                          tools provided by probability theory for assessing uncertainty and formulating
+                           probabilistic forecasts.</p>
+                 </div>
+            </center>
+            
+            
+        </div>
+
+        <button class="accordion">VI. Expected Value and Variance</button>
+<div class="panel">
+
+    <p><b>Expected value and variance</b> are key metrics that provide insights into the average outcome and variability
+        of random variables in discrete probability.</p>
+
+    <h3><b>Expected Value</b></h3>
+    <p>For a discrete random variable, the expected value, often represented as m or E(X), is determined by:</p>
+
+    <center>
+        <img src="expected.jpg" alt="">
+    </center>
+        
+    <p>This formula indicates that we multiply each value, x, in the sample space by its probability, f(x), and then sum them up. 
+        It can be seen as a weighted average, with weights being the probabilities.</p>
+
+    <h3><b>Variance</b></h3>
+    <p>The variance of a random variable, denoted as Var(X) or σ^2, measures the dispersion or spread of possible
+        outcomes around the expected value. It quantifies the extent to which the values of X differ from their mean.</p>
+
+    <center>
+        <img src="variance.jpg" alt="">
+    </center>
+        
+    <p>Here, x represents the possible values of X, E(X) is the expected value, and P(X = x) denotes the probability of X taking the value x.</p>
+    
+    <p>Expected value and variance are vital in probability theory and decision-making:</p>
+
+    <p><b>Decision-Making</b></p>
+    <p>The expected value helps quantify the average outcome or payoff for different choices or scenarios. 
+        It aids in comparing options and making decisions based on the anticipated average result.</p>
+
+    <center>
+        <img src="decision.gif" alt="">
+    </center>
+
+    <p><b>Insurance and Actuarial Science</b></p>
+    <p>Expected value and variance are utilized in insurance to set premiums and assess risk.
+        Actuaries use these metrics to estimate and analyze potential losses, helping to determine appropriate premium rates.</p>
+
+    <center>
+        <img src="science.gif" alt="">
+    </center>
+
+    <h3><b>Examples and Applications</b></h3>
+
+    <p><b>Gambling</b></p>
+    <p>In casino games, lotteries, or betting scenarios, expected value is critical for
+        calculating expected losses and long-term profitability of different bets.</p>
+
+    <center>
+        <img src="gamble.webp" alt="">
+    </center>
+
+    <p><b>Project Management</b></p>
+    <p>In project management, expected value and variance are used to estimate project duration and assess uncertainty.
+        This helps in effective resource management and scheduling.</p>
+
+    <center>
+        <img src="project.gif" alt="">
+    </center>
+
+    <p><b>Investment Analysis</b></p>
+    <p>Expected value and variance are used to evaluate the potential returns and risks of different investment opportunities.
+        They help in making investment choices based on desired returns and risk tolerance.</p>
+
+    <center>
+        <img src="investment.gif" alt="">
+    </center>
+    
+    <p>Expected value and variance provide essential information about the average result and variability associated with random variables. 
+        They are critical tools for risk analysis, uncertainty assessment, and decision-making in various fields, including finance, insurance, project management, and quality control.</p>
+    <br>
+    <br>
+    <center>
+        <div class="reflection">
+            <h2>REFLECTION</h2>
+            <h3>Sip on thought-provoking reflections and insights in, Expected Value and Variance, one of the discrete delicacies!</h3>
+            <br>
+            <p>Reflecting on my study of expected value and variance, I now better understand their importance in analyzing and measuring uncertainty. 
+                The expected value indicates the average outcome, showing the long-term trends of random variables, while variance measures how much results deviate from the average.</p>
+
+            <p>Learning about expected value allows us to assess average outcomes and make decisions based on this measure. 
+                It gives us a way to evaluate the central tendency of random variables, helping us weigh the benefits and costs of different scenarios. 
+                By considering probabilities and outcomes, we can determine the overall desirability of an event or decision.</p>
+
+            <p>Understanding variance helps us grasp the variability of outcomes from random variables. 
+                This lets us evaluate the degree of risk and uncertainty in different situations and understand the range of possible results. 
+                Considering variance in decision-making enables us to judge the stability and volatility of random variables, aligning our choices with our risk preferences.</p>
+
+            <p>In summary, studying expected value and variance has provided valuable tools for evaluating and measuring uncertainty. 
+                These concepts are widely used in risk management, decision-making, and finance. 
+                By understanding expected value, we can assess average performance and make informed decisions. 
+                Knowing about variance allows us to evaluate the risk and volatility of different situations, making it easier to analyze and manage uncertainty in the decision-making process.</p>
+        </div>
+    </center>
+    <br>
+</div>
+
+        </section>
+        <br>
+
+
+        <!--JS-->
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            //Sets the buttons into an accordian format
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                panel.style.display = "none";
+                } else {
+                panel.style.display = "block";
+                }
+            });
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </div>
+
+  </body>
+
+  <footer id="footer">
+    <div class="footer-container">
+      <ul class="social-media-icons">
+        <li><a href="https://www.facebook.com/johnandrei.manalo/"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="mailto:jsmanalo4@up.edu.ph"><i class="fas fa-envelope"></i></a></li>
+      </ul>
+    </div>
+    <h3 class="rights">Discrete Revelations &copy; All rights reserved.</h3>
+  </footer>  
+
+</html>
